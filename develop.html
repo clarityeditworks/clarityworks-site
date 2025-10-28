@@ -3,71 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clarity Development & Designs | Web Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Clarity Development & Designs</title>
   <style>
     :root {
-      --primary-color: #1a2e75;
+      --primary-color: #1b1f3b;
       --accent-color: #4b6ef5;
-      --light-color: #f5f7fa;
-      --text-color: #1a1a1a;
+      --highlight: #8bb2ff;
+      --text-light: #f7f9ff;
     }
 
     body {
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      font-family: 'Raleway', sans-serif;
-      color: var(--text-color);
-      background-color: var(--light-color);
+      background: #f3f5fc;
+      color: #222;
+      line-height: 1.6;
     }
 
     header {
-      background-color: var(--primary-color);
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      color: var(--text-light);
       padding: 1em 2em;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: white;
     }
 
     header h1 {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
+      font-size: 1.6em;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5em;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 1.5em;
       font-weight: 600;
+      position: relative;
     }
 
     nav a:hover {
-      color: var(--accent-color);
+      color: var(--highlight);
     }
 
     .hero {
       text-align: center;
       padding: 6em 2em;
-      background: linear-gradient(to right, var(--accent-color), var(--primary-color));
+      background: radial-gradient(circle at top left, var(--accent-color), var(--primary-color));
       color: white;
     }
 
     .hero h2 {
-      font-family: 'Poppins', sans-serif;
       font-size: 2.5em;
       margin-bottom: 0.5em;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto;
     }
 
     section {
       padding: 4em 2em;
       max-width: 900px;
       margin: 0 auto;
+    }
+
+    h3 {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      margin-bottom: 1em;
     }
 
     footer {
@@ -79,47 +84,42 @@
     }
   </style>
 </head>
-
 <body>
+
   <header>
     <h1>Clarity Development & Designs</h1>
     <nav>
-      <a href="index.html">Editing Services</a>
-      <a href="develop.html">Web Development</a>
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="#mission">Mission</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <h2>Web Design. AI Integration. Digital Solutions.</h2>
-    <p>Modern, intelligent, and user-focused web experiences built to represent your brand beautifully and powerfully.</p>
+    <p>Where creativity meets technology — bringing clarity, innovation, and seamless digital design to your online presence.</p>
   </section>
 
-  <section>
-    <h2>Our Services</h2>
-    <ul>
-      <li>Custom Web Design & Development</li>
-      <li>AI Integration for Smarter User Experience</li>
-      <li>Responsive & Mobile-Optimized Layouts</li>
-      <li>Ongoing Maintenance & Support</li>
-    </ul>
+  <section id="services">
+    <h3>Our Services</h3>
+    <p>We create clean, responsive websites and integrate intelligent systems using advanced AI tools — making your site not only beautiful but smart. Our services include website design, development, and content integration tailored to your business’s goals.</p>
   </section>
 
-  <section>
-    <h2>Mission Statement</h2>
-    <p>
-      Clarity Edit Works and Clarity Development & Designs exist to bring precision, creativity, and confidence to every story and digital experience we help build.
-      Whether through refined words or cutting-edge design, our mission is to transform ideas into clear, compelling, and impactful expressions of who you are and what you create.
-    </p>
+  <section id="mission">
+    <h3>Our Mission</h3>
+    <p>Clarity Edit Works and Clarity Development & Designs exist to bring precision, creativity, and confidence to every story and digital experience we help build. Our goal is to blend storytelling and innovation into every project, helping you express who you are through clarity and technology.</p>
   </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:clarityeditworks@gmail.com">clarityeditworks@gmail.com</a></p>
-    <p>Request a free one-page website sample today!</p>
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <p>For inquiries or a free one-page website sample, contact us at 
+    <a href="mailto:clarityeditworks@gmail.com">clarityeditworks@gmail.com</a>.</p>
   </section>
 
   <footer>
-    © 2025 Clarity Development & Designs | All Rights Reserved
+    <p>&copy; 2025 Clarity Development & Designs | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
